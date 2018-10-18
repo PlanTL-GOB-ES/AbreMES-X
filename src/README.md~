@@ -1,0 +1,53 @@
+# AllieES code
+
+This folder contains all the code used to create de AllieES corpus. The folders are structured as follows:
+
+## Execution
+
+The executable file "AllieES.jar" is the program you need to create your abbreviation-definition database. The executable needs one single parameter: the folder where the database will be stored. Before executing, you need to follow these simple steps:
+- Create the folder manually
+- Store inside that folder the following files: "JST_spa.txt" and "corpora_list.txt"
+
+JST_spa.txt contains all Journal Subject Terms extracted from the Spanish edition of MeSH (Medical Subject Headings).
+corpora_list.txt includes the folders where your corpora are stored. The file needs to have one corpus per line. For each line, use the following format: "corpus_name {TAB} corpus_folder"
+
+Remember that your corpora must be in Dublin Core format only. Learn more about Dublin Core in the following website: http://dublincore.org/
+
+One your output directory is ready, just type the following command in your terminal:
+
+java -jar AllieES.jar OUTPUT_DIRECTORY
+
+## Code folders
+
+### abbreviation_extractors
+
+Algorithms to extract abbreviations. Here we use the algorithm developed by Schwartz & Hearst[1].
+Alternative algorithms should be added in this folder.
+
+### corpora_readers
+
+This folder contains the code to read the folders where the corpus are stored. The program reads XML files in Dublin Core format only. 
+
+### elements
+
+This folder contains the classes used for the generation of the database.
+
+### main
+
+Executable class.
+
+### managers
+
+The code in this folder manages the database to get co-abbreviations, and also to gather information about each article used to extract abbreviation-definition pairs.
+
+### tabular_file_readers
+
+The code in this folder get the information from different database files. One file per database class/file.
+
+### tabular_files_writers
+
+The code in this folder writes the information in the database. One file per database class/file.
+
+## References
+
+[1] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"

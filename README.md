@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This folder contains the SmaDB database. This database is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[1], but contains Spanish abbreviations and their definitions instead of English.
+This repository contains the Spanish Medical Abbreviation DataBase (SmaDB). This database is created after automatically detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. We used a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. The structure of the database is very similar to the original Allie.
 
-These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[2], IBECS[3] and Pubmed[4]. We used a modified version of the algorithm developed by Schwartz & Hearst[5], adapted to the Spanish language. The structure of the database is very similar to the original Allie.
+To create this database, we use the metadata of different biomedical publications written in Spanish, which contain the titles and abstracts. The chosen schema is Dublin Core. We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. These metadata are available at the MeSpEn website (http://temu.bsc.es/mespen). Learn more about Dublin Core in the following website: http://dublincore.org/
 
-This repository includes the latest version of the database, and the source code available.
+This database is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[5], but contains Spanish abbreviations and their definitions instead of English ones.
 
-To create this database, we use XML files in Dublin Core format. We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. These metadata are available at the MeSpEn website (http://temu.bsc.es/mespen). Learn more about Dublin Core in the following website: http://dublincore.org/
+This repository includes the latest version of the database, and the source code available. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
 ## Prerrequisites
 
