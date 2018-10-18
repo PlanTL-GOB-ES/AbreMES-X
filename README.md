@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This repository contains the Spanish Medical Abbreviation DataBase (SmaDB). This database is created after automatically detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. We used a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. The structure of the database is very similar to the original Allie.
+This repository contains the Spanish Medical Abbreviation DataBase (SmaDB). This database is created after automatically detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. We used a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. 
 
 To create this database, we use the metadata of different biomedical publications written in Spanish, which contain the titles and abstracts. The chosen schema is Dublin Core. We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. These metadata are available at the MeSpEn website (http://temu.bsc.es/mespen). Learn more about Dublin Core in the following website: http://dublincore.org/
 
-This database is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[5], but contains Spanish abbreviations and their definitions instead of English ones.
+This database is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[5], but contains Spanish abbreviations and their definitions instead of English ones. The structure of the database is inspired in this work.
 
 This repository includes the latest version of the database, and the source code available. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
@@ -55,11 +55,11 @@ Remember that your corpora must be in Dublin Core format only. Learn more about 
 
 One your output directory is ready, just type the following command in your terminal:
 
-_$ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY_
+$ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
 
 ## Examples
 
-_$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB_
+$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
 
 ## Contact
 
@@ -87,4 +87,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [4] PubMed is a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval. https://www.ncbi.nlm.nih.gov/pubmed/
 
-[5] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text". 2003
+[5] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"
