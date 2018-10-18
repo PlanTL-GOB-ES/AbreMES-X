@@ -55,11 +55,11 @@ Remember that your corpora must be in Dublin Core format only. Learn more about 
 
 One your output directory is ready, just type the following command in your terminal:
 
-$ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
+_$ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY_
 
 ## Examples
 
-$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
+_$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB_
 
 ## Contact
 
