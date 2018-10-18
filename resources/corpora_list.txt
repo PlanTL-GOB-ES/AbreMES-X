@@ -1,0 +1,2 @@
+Corpus_1_Name	~/Corpus_1_folder/dublin_core_folder
+Corpus_2_Name	~/Corpus_2_folder/dublin_core_folder
