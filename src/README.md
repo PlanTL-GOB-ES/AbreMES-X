@@ -39,4 +39,4 @@ The code in this folder writes the information in the database. One file per dat
 
 ## References
 
-[1] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"
+[1] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text". 2003.

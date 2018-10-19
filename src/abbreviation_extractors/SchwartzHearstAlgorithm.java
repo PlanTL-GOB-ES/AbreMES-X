@@ -148,18 +148,29 @@ public class SchwartzHearstAlgorithm {
 				    	if (! hasCapital(shortForm))
 				    		shortForm = "";
 				    }
-				    
+				    				    
 				    if (isValidShortForm(shortForm))
 				    {
 				    	String pair = extractAbbrPair(shortForm.trim(), longForm.trim());
 				    	if (pair != null)
 				    	{
 				    		String SF = pair.split("\t")[0];
-				    		
+				    		 
+				    		/*
+				    		 * Here we check if the potential abbreviation is a geophysical location. If so, we discard it. 
+				    		 */
 				    		if (!geonames.containsKey(SF))
 				    		{
+				    			/*
+				    			 * We may find the acronym AU (author) in the end of some articles. 
+				    			 * We discard these acronyms only if we are not in the last sentence of the abstract.
+				    			 */
 				    			if (!SF.equalsIgnoreCase("AU"))
 					    		{
+				    				/* 
+				    				 * Some other detected "abbreviations" are not exactly abbreviations. They specify patients groups.
+				    				 * We discard these mentions as well.  
+				    				 */
 				    				if (!SF.startsWith("Grupo") && !SF.startsWith("grupo"))
 				    				{
 				    					String LF = pair.split("\t")[1];
@@ -170,6 +181,10 @@ public class SchwartzHearstAlgorithm {
 							    		
 							    		if (!allLowerCase)
 							    		{
+							    			/*
+							    			 * Some detected abbreviations and definitions contain incorrectly encoded characters. 
+							    			 * The following lines replace those characters with their corresponding ones.
+							    			 */
 							    			SF = SF.replace("&#945;", "α").replace("", "•");
 									    	LF = LF.replace("", "'").replace("", "'").replace("", "'").replace("&#945;", "α").replace("", "û");
 									    		
@@ -189,6 +204,10 @@ public class SchwartzHearstAlgorithm {
 							    		
 							    		if (!allLowerCase)
 							    		{
+							    			/*
+							    			 * Some detected abbreviations and definitions contain incorrectly encoded characters. 
+							    			 * The following lines replace those characters with their corresponding ones.
+							    			 */
 							    			SF = SF.replace("&#945;", "α").replace("", "•");
 									    	LF = LF.replace("", "'").replace("", "'").replace("", "'").replace("&#945;", "α");
 									    		
@@ -205,6 +224,13 @@ public class SchwartzHearstAlgorithm {
 				    			}
 				    			else
 				    			{
+				    				/*
+				    				 * Some short abbreviations, with less than 3 characters, may have coincidence with geophyisical 
+				    				 * abbreviations. We keep these abbreviations because we did not find any issues with them, 
+				    				 * but we still recommend reviewing them just in case.
+				    				 *
+				    				 * Uncomment the following line to display these abbreviations.
+				    				 */
 			//	    				System.out.println("Possible geophysical location detected, please check: " + SF);
 				    				if (!SF.equals("AU") && !SF.equals("au"))
 						    		{
