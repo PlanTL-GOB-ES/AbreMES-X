@@ -10,6 +10,7 @@ This database is based on the "Allie Search Service for Abbreviation / Long Form
 
 This repository includes the latest version of the database, and the source code available. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
+
 ## Prerequisites
 
 This software has been compiled with Java SE 1.8, and should work with recent versions. You can download Java from the following website: https://www.java.com/en/download
@@ -23,45 +24,48 @@ GeoNames is a geographical database which covers over eleven million placements.
 
 <pre>
 exec/
-
 The executable to create the database.
 
 exec/SmaDB_lib/
-
 Stanford CoreNLP module, necessary to get the abbreviations.
 
 SmaDB/
-
 The complete database available for everyone.
 
 src/
-
 Source code used to generate de database.
 
 src/resources/
-
 Files needed to execute the database creator:
-- corpora_list.txt: includes the folders where your corpora metadata are stored. The file needs to have one corpus per line. For each line, use the following format: "corpus_name {TAB} corpus_folder". Included corpora metadatas must follow the Dublin Core format.
-- geonames.zip: includes all the world location names extracted from GeoNames.
-- JST_spa.txt contains all Journal Subject Terms extracted from the Spanish edition of MeSH (Medical Subject Headings). 
+  - corpora_list.txt: includes the folders where your corpora metadata are stored. The file needs 
+  to have one corpus per line. For each line, use the following format: "corpus_name {TAB} corpus_folder". 
+  Included corpora metadatas must follow the Dublin Core format.
+  - geonames.zip: includes all the world location names extracted from GeoNames.
+  - JST_spa.txt contains all Journal Subject Terms extracted from the Spanish edition of MeSH 
+  (Medical Subject Headings). 
 </pre>
 
 
 ## Usage
 
 The executable file "SmaDB.jar" is the program you need to create your abbreviation-definition database. The executable needs one single parameter: the folder where the database will be stored. Before executing, you need to follow these simple steps:
-- Create the output folder manually.
-- Store inside that folder the files found at folder src/resources.
+* Create the output folder manually.
+* Store inside that folder the files found at folder src/resources.
 
 Remember that your corpora must be in Dublin Core format only. Learn more about Dublin Core in the following website: http://dublincore.org/
 
 One your output directory is ready, just type the following command in your terminal:
 
+<pre>
 $ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
+</pre>
+
 
 ## Examples
+<pre>
+$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
+</pre>
 
-  $ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
 
 ## Contact
 
