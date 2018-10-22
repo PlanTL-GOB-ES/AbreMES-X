@@ -10,7 +10,7 @@ This database is based on the "Allie Search Service for Abbreviation / Long Form
 
 This repository includes the latest version of the database, and the source code available. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
-## Prerrequisites
+## Prerequisites
 
 This software has been compiled with Java SE 1.8, and should work with recent versions. You can download Java from the following website: https://www.java.com/en/download
 
