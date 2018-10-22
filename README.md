@@ -18,10 +18,10 @@ Stanford CoreNLP is needed as well. We used version 3.9.0 for this work, and lat
 
 GeoNames is a geographical database which covers over eleven million placements. GeoNames is distributed under Creative Commons BY-4.0 license. It is available for download free or charge: http://www.geonames.org
 
+
 ## Directory structure
 
-We can find the following folders in this project:
-
+<pre>
 exec/
 
 The executable to create the database.
@@ -44,6 +44,8 @@ Files needed to execute the database creator:
 - corpora_list.txt: includes the folders where your corpora metadata are stored. The file needs to have one corpus per line. For each line, use the following format: "corpus_name {TAB} corpus_folder". Included corpora metadatas must follow the Dublin Core format.
 - geonames.zip: includes all the world location names extracted from GeoNames.
 - JST_spa.txt contains all Journal Subject Terms extracted from the Spanish edition of MeSH (Medical Subject Headings). 
+</pre>
+
 
 ## Usage
 
@@ -59,7 +61,7 @@ $ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
 
 ## Examples
 
-$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
+  $ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
 
 ## Contact
 
