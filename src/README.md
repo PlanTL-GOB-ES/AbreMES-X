@@ -9,8 +9,7 @@ Users are permitted to change the code and adapt it to their needs without any r
 abbreviation_extractors/
 Algorithms to extract abbreviations. Here we use a modified version of the algorithm developed 
 by Schwartz & Hearst[1], adapted for the Spanish language, and using several filters to improve 
-its quality. 
-Alternative abbreviation extraction algorithms should be added in this folder.
+its quality. Alternative abbreviation extraction algorithms should be added in this folder.
 
 corpora_readers/
 The code to read the folders where the corpus is stored. The program reads XML files in Dublin 
