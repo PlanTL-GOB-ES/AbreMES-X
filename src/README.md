@@ -7,12 +7,14 @@ Users are permitted to change the code and adapt it to their needs without any r
 
 <pre>
 abbreviation_extractors/
-Algorithms to extract abbreviations. Here we use a modified version of the algorithm developed by Schwartz & Hearst[1], 
-adapted for the Spanish language, and using several filters to improve its quality. 
+Algorithms to extract abbreviations. Here we use a modified version of the algorithm developed 
+by Schwartz & Hearst[1], adapted for the Spanish language, and using several filters to improve 
+its quality. 
 Alternative abbreviation extraction algorithms should be added in this folder.
 
 corpora_readers/
-The code to read the folders where the corpus is stored. The program reads XML files in Dublin Core format only. 
+The code to read the folders where the corpus is stored. The program reads XML files in Dublin 
+Core format only. 
 
 elements/
 The classes used for the generation of the database.
