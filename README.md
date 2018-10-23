@@ -1,6 +1,8 @@
-# SmaDB: Spanish Medical Abbreviation DataBase
+# SMADB-creator: Spanish Medical Abbreviation DataBase creator
 
 ## Introduction
+
+This is the software used to create the Spanish Medical Abbreviation DataBase (). It is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[5]. 
 
 This repository contains the Spanish Medical Abbreviation DataBase (SmaDB). This database is created after automatically detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. We used a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. 
 
@@ -13,7 +15,7 @@ This repository includes the latest version of the database, and the source code
 
 ## Prerequisites
 
-This software has been compiled with Java SE 1.8, and should work with recent versions. You can download Java from the following website: https://www.java.com/en/download
+This software has been compiled with Java SE 1.8 and it should work with recent versions. You can download Java from the following website: https://www.java.com/en/download
 
 Stanford CoreNLP is needed as well. We used version 3.9.0 for this work, and latest versions should work as well. Stanford CoreNLP is licensed under the GNU General Public License (v3 or later). You can download it from the following website: https://stanfordnlp.github.io/CoreNLP/
 
@@ -29,18 +31,18 @@ The executable to create the database.
 exec/SmaDB_lib/
 Stanford CoreNLP module, necessary to get the abbreviations.
 
-SmaDB/
-The complete database available for everyone.
-
 src/
 Source code used to generate de database.
 
 src/resources/
 Files needed to execute the database creator:
+
   - corpora_list.txt: includes the folders where your corpora metadata are stored. The file needs 
   to have one corpus per line. For each line, use the following format: "corpus_name {TAB} corpus_folder". 
   Included corpora metadatas must follow the Dublin Core format.
+  
   - geonames.zip: includes all the world location names extracted from GeoNames.
+  
   - JST_spa.txt contains all Journal Subject Terms extracted from the Spanish edition of MeSH 
   (Medical Subject Headings). 
 </pre>
