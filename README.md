@@ -1,4 +1,4 @@
-# SMADB-creator: Spanish Medical Abbreviation DataBase creator
+# sp_mediAbbreviationDB-creator: Spanish Medical Abbreviation DataBase creator
 
 ## Introduction
 
