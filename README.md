@@ -3,17 +3,10 @@
 ## Introduction
 
 This is the software used to create the Spanish Medical Abbreviation DataBase (https://github.com/PlanTL/SMADB/). 
-The database is created by detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the metadata of different biomedical publications written in Spanish, which contain the titles and abstracts. The sources of these publications are SciELO[2], IBECS[3] and Pubmed[4]. The chosen schema is Dublin Core (http://dublincore.org/). We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. T
+The database is created by detecting abbreviations and their potential definitions explicitly mentioned in the same sentence,  extracted from the metadata of different biomedical publications written in Spanish that contain the titles and abstracts. 
+The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. The chosen schema is Dublin Core (http://dublincore.org/). We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. 
 
-
-
-This repository contains the Spanish Medical Abbreviation DataBase (SmaDB). This database is created after automatically detecting abbreviations and their potential definitions explicitly mentioned in the same sentence. These abbreviations are extracted from the titles and abstracts of different biomedical publications written in Spanish. The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. We used a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. 
-
-To create this database, we use the metadata of different biomedical publications written in Spanish, which contain the titles and abstracts. The chosen schema is Dublin Core. We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. These metadata are available at the MeSpEn website (http://temu.bsc.es/mespen). Learn more about Dublin Core in the following website: http://dublincore.org/
-
-This database is based on the "Allie Search Service for Abbreviation / Long Form", developed by Yamamoto et al.[5], but contains Spanish abbreviations and their definitions instead of English ones. The structure of the database is inspired in this work.
-
-This repository includes the latest version of the database, and the source code available. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
+We use a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
 
 ## Prerequisites
@@ -90,10 +83,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## References
 
-[2] Scientific Electronic Library Online (SciELO Spain) is an electronic virtual library covering a collection of Spanish health scientific journals selected following preestablished quality criteria. Developed and maintained by the Spanish National Library of Health Sciences.  http://scielo.isciii.es
+[1] Scientific Electronic Library Online (SciELO Spain) is an electronic virtual library covering a collection of Spanish health scientific journals selected following preestablished quality criteria. Developed and maintained by the Spanish National Library of Health Sciences.  http://scielo.isciii.es
 
-[3] Bibliographical database for health articles, contains abstracts and references of different articles written in Spanish. Developed and maintained by the Carlos III Health Institute in Madrid, Spain. http://ibecs.isciii.es
+[2] Bibliographical database for health articles, contains abstracts and references of different articles written in Spanish. Developed and maintained by the Carlos III Health Institute in Madrid, Spain. http://ibecs.isciii.es
 
-[4] PubMed is a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval. https://www.ncbi.nlm.nih.gov/pubmed/
+[3] PubMed is a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval. https://www.ncbi.nlm.nih.gov/pubmed/
 
-[5] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"
+[4] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"
