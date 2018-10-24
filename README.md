@@ -4,7 +4,7 @@
 
 This is the software used to create the Spanish Medical Abbreviation DataBase (https://github.com/PlanTL/SMADB/). 
 The database is created by detecting abbreviations and their potential definitions explicitly mentioned in the same sentence,  extracted from the metadata of different biomedical publications written in Spanish that contain the titles and abstracts. 
-The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3]. The chosen schema is Dublin Core (http://dublincore.org/). We use the official ones from SciELO, and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. 
+The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3] and the chosen schema is Dublin Core (http://dublincore.org/). We use the official ones from SciELO and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. 
 
 We use a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve its quality. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
@@ -68,6 +68,7 @@ $ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
 ## Contact
 
 Ander Intxaurrondo (ander.intxaurrondo@bsc.es)
+
 
 ## License
 
