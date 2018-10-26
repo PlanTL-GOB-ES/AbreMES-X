@@ -63,7 +63,7 @@ $ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
 ## Examples
 <pre>
 $ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
-</pre>[1] Y. Yamamoto, A. Yamaguchi, H. Bono and T. Takagi, "Allie: a database and a search service of abbreviations and long forms.", http://allie.dbcls.jp/
+</pre>
 
 
 ## Contact
