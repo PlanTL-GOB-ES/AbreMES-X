@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the software used to create the Spanish Medical Abbreviation DataBase (https://github.com/PlanTL/SMADB/). 
+This is the software used to create the Spanish Medical Abbreviation DataBase (https://github.com/PlanTL/sp_mediAbbreviationDB). 
 The database is created by detecting abbreviations and their potential definitions explicitly mentioned in the same sentence,  extracted from the metadata of different biomedical publications written in Spanish that contain the titles and abstracts. 
 The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3] and the chosen schema is Dublin Core (http://dublincore.org/). We use the official ones from SciELO and customized adaptations of the XML files to Dublin Core from IBECS and Pubmed metadata. 
 
