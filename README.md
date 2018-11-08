@@ -24,7 +24,7 @@ GeoNames is a geographical database which covers over eleven million placements.
 exec/
 The executable to generate the database.
 
-exec/SmaDB_lib/
+exec/AbreMES_X_lib/
 Stanford CoreNLP module, necessary to get the abbreviations.
 
 src/
@@ -46,7 +46,7 @@ Files needed to execute the database generator:
 
 ## Usage
 
-The executable file "SmaDB.jar" is the program you need to generate your abbreviation-definition database. The executable needs one single parameter: the folder where the database will be stored. Before executing, you need to follow these two steps:
+The executable file "AbreMES_X.jar" is the program you need to generate your abbreviation-definition database. The executable needs one single parameter: the folder where the database will be stored. Before executing, you need to follow these two steps:
 
 1. Create the output folder manually.
 2. Store inside that folder the files found in the folder src/resources.
@@ -56,13 +56,13 @@ Remember that your corpora must be in Dublin Core format only. Learn more about 
 One your output directory is ready, just type the following command in your terminal:
 
 <pre>
-$ java -jar SmaDB.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
+$ java -jar AbreMES_X.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
 </pre>
 
 
 ## Examples
 <pre>
-$ java -jar SmaDB.jar ~/SmaDB/resources ~/SmaDB/DB
+$ java -jar AbreMES_X.jar ~/AbreMES_X/resources ~/AbreMES_X/DB
 </pre>
 
 
