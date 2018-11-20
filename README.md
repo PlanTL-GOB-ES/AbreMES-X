@@ -8,6 +8,10 @@ The sources of these publications are SciELO[1], IBECS[2] and Pubmed[3] and the 
 
 We use a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve the results. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
+##  Digital Object Identifier (DOI)
+
+https://doi.org/10.5281/zenodo.1492255
+
 
 ## Prerequisites
 
