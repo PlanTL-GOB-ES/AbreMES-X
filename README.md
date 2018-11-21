@@ -72,7 +72,7 @@ $ java -jar AbreMES_X.jar ~/AbreMES_X/resources ~/AbreMES_X/DB
 
 ## Contact
 
-PlanTL.Sanidad@bsc.es
+ander.intxaurrondo@bsc.es
 
 ## License
 
