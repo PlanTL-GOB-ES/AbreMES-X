@@ -73,7 +73,8 @@ $ java -jar AbreMES_X.jar ~/AbreMES_X/resources ~/AbreMES_X/DB
 
 ## Contact
 
-ander.intxaurrondo@bsc.es
+Ander Intxaurrondo (ander.intxaurrondo@bsc.es)
+
 
 ## License
 
