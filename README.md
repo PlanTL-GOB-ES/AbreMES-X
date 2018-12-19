@@ -54,7 +54,7 @@ Files needed to execute the database generator:
 The executable file "AbreMES_X.jar" is the program you need to generate your abbreviation-definition database. The 
 executable needs one single parameter: the resources directory. 
 
-From the `src` folder type the following command in your terminal: 
+From the `src` folder, type the following command in your terminal: 
 
 <pre>
 $ java -jar AbreMES_X.jar RESOURCES_DIRECTORY
@@ -64,6 +64,9 @@ Remember that your corpora must be in Dublin Core format only. Learn more about 
 
 
 ## Examples
+
+Assuming that we have *AbreMES-X* in our home directory:
+
 <pre>
 $ java -jar AbreMES_X.jar ~/AbreMES-X/resources 
 </pre>
