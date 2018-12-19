@@ -35,7 +35,7 @@ Stanford CoreNLP module, necessary to get the abbreviations.
 src/
 Source code used to generate de database.
 
-src/resources/
+resources/
 Files needed to execute the database generator:
 
   - corpora_list.txt: includes the folders where your corpus metadata are stored. The file needs 
@@ -51,23 +51,21 @@ Files needed to execute the database generator:
 
 ## Usage
 
-The executable file "AbreMES_X.jar" is the program you need to generate your abbreviation-definition database. The executable needs one single parameter: the folder where the database will be stored. Before executing, you need to follow these two steps:
+The executable file "AbreMES_X.jar" is the program you need to generate your abbreviation-definition database. The 
+executable needs one single parameter: the resources directory. 
 
-1. Create the output folder manually.
-2. Store inside that folder the files found in the folder src/resources.
-
-Remember that your corpora must be in Dublin Core format only. Learn more about Dublin Core in the following website: http://dublincore.org/
-
-One your output directory is ready, just type the following command in your terminal:
+From the `src` folder type the following command in your terminal: 
 
 <pre>
-$ java -jar AbreMES_X.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
+$ java -jar AbreMES_X.jar RESOURCES_DIRECTORY
 </pre>
+
+Remember that your corpora must be in Dublin Core format only. Learn more about Dublin Core in the following website: http://dublincore.org/
 
 
 ## Examples
 <pre>
-$ java -jar AbreMES_X.jar ~/AbreMES-X/resources ~/AbreMES-X/DB
+$ java -jar AbreMES_X.jar ~/AbreMES-X/resources 
 </pre>
 
 
