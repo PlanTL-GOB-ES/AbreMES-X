@@ -131,7 +131,7 @@ public class AbreMES_X {
 
 	public void readCorporaList() throws IOException 
 	{
-		BufferedReader reader = new BufferedReader(new FileReader(mainDirectory + File.separator + "corpora_list.extended.txt"));
+		BufferedReader reader = new BufferedReader(new FileReader(mainDirectory + File.separator + "corpora_list.txt"));
 		String line = "";
 		while ((line = reader.readLine()) != null)
 		{
