@@ -67,7 +67,7 @@ $ java -jar AbreMES_X.jar RESOURCES_DIRECTORY OUTPUT_DIRECTORY
 
 ## Examples
 <pre>
-$ java -jar AbreMES_X.jar ~/AbreMES_X/resources ~/AbreMES_X/DB
+$ java -jar AbreMES_X.jar ~/AbreMES-X/resources ~/AbreMES-X/DB
 </pre>
 
 
