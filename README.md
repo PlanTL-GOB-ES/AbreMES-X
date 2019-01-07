@@ -65,7 +65,7 @@ $ java -jar AbreMES_X.jar RESOURCES_DIRECTORY
 
 Remember that your corpora must be in Dublin Core format only. Learn more about Dublin Core in the following website: http://dublincore.org/
 
-The output DataBase is generated in the directory `resources/output`. Learn more about this directory structure here: https://github.com/PlanTL/AbreMES-DB.
+The output database is generated in the directory `resources/output`. Learn more about the structure of this directory here: https://github.com/PlanTL/AbreMES-DB.
 
 ## Examples
 
