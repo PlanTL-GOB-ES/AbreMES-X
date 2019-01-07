@@ -14,7 +14,7 @@ and abstracts. The sources of these publications are SciELO[1], IBECS[2] and Pub
 Core. We use the official ones from SciELO and customized adaptations of the XML files to Dublin Core from IBECS and 
 Pubmed metadata. 
 
-We use a modified version of the algorithm developed by Schwartz & Hearst[4], adapted to the Spanish language and applying specific filters to improve the results. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
+We use a modified version of the algorithm developed by Schwartz and Hearst[4], adapted to the Spanish language and applying specific filters to improve the results. Users are permitted to change the code and adapt it to their needs without any restrictions, like adapting the abbreviation-definition extractor into other languages, domains, or other document types to analyze.
 
 
 ## Prerequisites
@@ -101,4 +101,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [3] PubMed is a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval. https://www.ncbi.nlm.nih.gov/pubmed/
 
-[4] A.S. Schwartz, M.A. Hearst, "A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical Text"
+[4] A.S. Schwartz and M.A. Hearst, "A simple algorithm for identifying abbreviation definitions in biomedical text". Pacific Symposium on Biocomputing. Pacific Symposium on Biocomputing, 2003, 451-462.
