@@ -1,9 +1,5 @@
 # AbreMES-X: Extractor de Abreviaturas Médicas en Español (Spanish Medical Abbreviation extractor)
 
-##  Digital Object Identifier (DOI)
-
-https://doi.org/10.5281/zenodo.1492255
-
 
 ## Introduction
 
