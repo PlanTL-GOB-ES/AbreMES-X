@@ -1,6 +1,11 @@
 # AbreMES-X: Extractor de Abreviaturas Médicas en Español (Spanish Medical Abbreviation extractor)
 
 
+##  Digital Object Identifier (DOI)
+
+https://doi.org/10.5281/zenodo.2542555
+
+
 ## Introduction
 
 This is the software used to generate the Spanish Medical Abbreviation DataBase (https://github.com/PlanTL/AbreMES-DB). 
